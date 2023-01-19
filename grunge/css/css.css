@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url(./../font/centurygothic.ttf);
+}
+/* font-family: 'Ribeye', cursive; */
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  background-color: #c1aa81;
+  font-family: "Century Gothic";
+}
+
+.container {
+  max-width: 1766px;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  background-color: #62664c;
+}
+.header__main {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+}
+.header__nav {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  gap: 82px;
+}
+.header__link {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.welcome {
+  display: flex;
+  position: relative;
+}
+.welcome::before {
+  position: absolute;
+  content: "";
+  width: 442px;
+  height: 247px;
+  left: -365px;
+  top: 202px;
+
+  background: rgba(33, 33, 21, 0.7);
+  border-radius: 60px;
+}
+.welcome__main {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.welcome__title {
+  font-family: "Ribeye";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 137px;
+
+  color: #630b00;
+}
+.welcome__desc {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+
+  color: #000000;
+}
+.welcome__btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 101.52%;
+  color: #ffffff;
+  padding: 20px 52px;
+  text-align: center;
+  background-color: #630b00;
+  border-radius: 30px;
+  width: fit-content;
+  transition: all 0.3s;
+}
+.welcome__btn:hover {
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+}
+.welcome__img {
+}
+
+.plat {
+  padding: 74px 33px 87px 90px;
+  display: flex;
+  justify-content: space-between;
+  background: #62664c;
+  border-radius: 30px;
+  position: relative;
+}
+.plat__img {
+  position: relative;
+  z-index: 10;
+}
+.plat__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 82px;
+  width: 588px;
+  position: relative;
+  z-index: 10;
+}
+.plat__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 86px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.plat__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+.plat__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+}
+.plat__price-old {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  position: relative;
+  color: #c7adad;
+}
+.plat__price-old::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 5px;
+  background-color: #c7adad;
+  top: 48%;
+  left: -5px;
+}
+.plat__price-new {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+
+  color: #bbc7ad;
+}
+.welcome__btn {
+}
+
+.dec-1 {
+  position: absolute;
+  left: 0;
+  top: 180px;
+}
+.dec-2 {
+  position: absolute;
+  left: 0;
+  top: 680px;
+}
+.dec-3 {
+  position: absolute;
+  left: 500px;
+  top: 100%;
+}
+
+.line {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 154px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #630b00;
+  border-radius: 60px;
+  margin-top: 120px;
+  margin-bottom: 74px;
+}
+.line__item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #a48f6a;
+}
+.line__item:nth-child(odd) {
+  color: #b09a97;
+}
+
+.catalog {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: scroll;
+}
+.catalog__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 246px;
+  margin-right: 160;
+}
+.catalog__img {
+  height: 352px;
+}
+.catalog__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.catalog__title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+.catalog__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+}
+.catalog__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  color: #7c7d51;
+}
+.ad {
+  position: relative;
+  z-index: 10;
+  padding-left: 142px;
+  width: 100%;
+  height: 807px;
+  background: #62664c;
+  border-radius: 30px;
+  display: flex;
+}
+.ad__info {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 1132px;
+}
+.ad__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 86px;
+  color: #ffffff;
+}
+.ad__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.contact__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 86px;
+  text-align: center;
+  padding: 54px;
+  color: #630b00;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+.contact__col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.contact__link {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.contact__link:hover {
+  text-decoration: underline;
+}
+.contact-bg {
+  background-color: #62664c;
+  position: relative;
+  z-index: 10;
+}

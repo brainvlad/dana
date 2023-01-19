@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url(./../font/centurygothic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Century Gothic";
+  padding-bottom: 200px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1595px;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 160px;
+  margin-bottom: 122px;
+}
+.header__logo {
+}
+.header__nav {
+  display: flex;
+  gap: 22px;
+}
+.header__link {
+  display: block;
+  width: 208px;
+  height: 134px;
+  background-color: #ddf6cd;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s;
+}
+.header__link:hover {
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+}
+
+.welcome {
+  display: flex;
+  height: 985px;
+  background: #a9bc9c;
+}
+.welcome__catalog {
+  height: inherit;
+}
+.welcome__catalog-first {
+  background-color: #ddf6cd;
+}
+.welcome__catalog-second {
+  background-color: #cee6bf;
+}
+.welcome__catalog-item {
+  height: 50%;
+  width: 691px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__info {
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+.welcome__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #ffffff;
+  text-align: center;
+}
+.welcome__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  color: #ffffff;
+}
+.welcome__btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  padding: 10px 20px;
+  background: #e7e7e7;
+  border-radius: 30px;
+  display: block;
+  width: fit-content;
+  transition: all 0.3s;
+}
+.welcome__btn:hover {
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(51, 80, 34, 0.2);
+}
+.devider {
+  border-top: 5px solid #4e3965;
+  border-bottom: 10px solid #4e3965;
+  height: 37px;
+  margin-top: 62px;
+  margin-bottom: 94px;
+  position: relative;
+}
+.devider__btn {
+  display: block;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+  padding: 28px 21px;
+  background: #4e3965;
+  border-radius: 30px;
+}
+
+.ad {
+  background: #a9bc9c;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+.ad::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -20%;
+  width: 20%;
+  background-color: #a9bc9c;
+}
+.ad__info {
+  width: 1130px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+.ad__title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 86px;
+  color: #ffffff;
+}
+.ad__desc {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.ad__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 20px 52px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 101.52%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4e3965;
+  border-radius: 30px;
+}
+.ad__pict {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.catalog {
+  background-color: #a9bc9c;
+  padding: 28px 95px 120px;
+  margin-top: 203px;
+}
+.catalog__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 76px;
+}
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog__item {
+  width: 228px;
+}
+.catalog__img {
+  height: 228px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e3965;
+}
+.catalog__info {
+}
+.catalogg__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: right;
+  color: #070707;
+  padding-bottom: 24px;
+}
+.catalog__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: right;
+  color: #070707;
+}
+.catalog__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  color: #7c7d51;
+}
+
+.list {
+  display: flex;
+  background-color: #a9bc9c;
+}
+.list__list {
+  display: flex;
+  width: 902px;
+  flex-wrap: wrap;
+}
+.list__item {
+  padding-top: 20px;
+  width: 451px;
+  height: 491px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.list__num {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 245px;
+  text-align: center;
+
+  color: #4e3965;
+}
+.list__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+.list__desc {
+  width: 243px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+.list__catalog {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.list__item:nth-child(2),
+.list__item:nth-child(3) {
+  background: #1c1c1c;
+}
+.list__item:nth-child(1),
+.list__item:nth-child(4) {
+  background: #96a886;
+}
+.list__item:nth-child(2) > .list__title,
+.list__item:nth-child(2) > .list__desc,
+.list__item:nth-child(3) > .list__title,
+.list__item:nth-child(3) > .list__desc {
+  color: #ffffff;
+}
+.list__item:nth-child(1) {
+  position: relative;
+}
+.list__item:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  width: 500%;
+  height: 491px;
+  top: 0;
+  left: -500%;
+  background-color: #96a886;
+}
